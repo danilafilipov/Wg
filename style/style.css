@@ -35,19 +35,25 @@ body {
 	margin: 0;
 }
 
-
-
-.main-files_description,
-.main-description_paragraph {
+.main-files_description {
 	font-family: Open sans, regular;
 	font-size: 14px;
 	line-height: 23px;
+}
+
+.main-description_paragraph,
+.main-description_plan {
+	font-family: Open sans, regular;
+	font-size: 14px;
+	line-height: 23px;
+	color: #ffffff;
 }
 
 .main-description_title {
 	font-family: Open sans, semibold;
 	font-size: 39.35px;
 	line-height: 62px;
+	color: #ffffff;
 }
 
 .main-button {
@@ -101,15 +107,13 @@ body {
 }
 
 /* Основной контент main */
-.main-files {
-
-}
 
 .main-files_list {
 	display: flex; 
 	justify-content: space-around;
 	list-style: none;
 	margin-top: 170px;
+	margin-bottom: 96px;
 }
 
 .main-files_item {
@@ -144,13 +148,55 @@ body {
 
 /* Описательная часть */
 
+.main-description_tablet-block {
+	width: 650px;
+	margin: 0 auto;
+}
+
+.main-description_computer-block {
+	width: 520px;
+}
+
+
+
+.main-description_tablet {
+	text-align: center;
+	padding-top: 85px;
+    background-color: #5fc18b;
+}
+
+.main-description_title {
+	margin-top: 17px;
+	margin-bottom: 23px;
+}
+
+.main-description_tablet-plan {
+	text-align: left;
+    margin-bottom: 45px;
+}
+
+.main-description_paragraph {
+    text-align: left;
+    width: 530px;
+    margin-bottom: 0;
+    margin-top: 65px;
+    margin-left: 65px;
+}
+
+.main-description_computer {
+	display: flex;
+    margin: 0 auto;
+    background-color: #44a36f;
+}
+
 .main-description_tablet::before {
 	content: "";
 	position: relative;
 	display: block;
 	width: 156px;
 	height: 156px;
-	background-image: url(../image/1.svg);
+	margin: 0 auto;
+	background-image: url(../image/1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -159,9 +205,11 @@ body {
 	content: "";
 	position: relative;
 	display: block;
-	width: 156px;
-	height: 156px;
-	background-image: url(../image/2.svg);
+	width: 275px;
+	height: 228px;
+    margin-left: 228px;
+    margin-top: 44px;
+	background-image: url(../image/2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
