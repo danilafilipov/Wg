@@ -1,0 +1,223 @@
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	max-width: 1280px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.header-title {
+	font-family: Open sans, regular;
+	font-size: 49.35px;
+	line-height: 62px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #ffffff;
+
+	display: block;
+	text-align: center;
+	padding-top: 31px;
+
+}
+
+.main-files_title,
+.main-button {
+	font-family: Open sans, semibold;
+	font-size: 27.35px;
+	line-height: 62px;
+	margin: 0;
+}
+
+
+
+.main-files_description,
+.main-description_paragraph {
+	font-family: Open sans, regular;
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.main-description_title {
+	font-family: Open sans, semibold;
+	font-size: 39.35px;
+	line-height: 62px;
+}
+
+.main-button {
+	text-decoration: none;
+}
+
+.footer-copyright,
+.footer-user_form__input,
+.footer-user_form__textarea {
+	font-family: Open sans, regular;
+	font-size: 14px;
+	line-height: 22px;	
+}
+
+.user-form_header__input {
+	font-family: Open sans, regular;
+	font-size: 15.35px;
+	line-height: 23px; 
+}
+
+.user-form_header__paragraph {
+	font-family: Open sans, regular;
+	font-size: 15.35px;
+	letter-spacing: 0.1px
+}
+
+.user-form_header__button {
+	font-family: Open sans, semibold;
+	font-size: 25.65px;
+	line-height: 45px;	
+	text-transform: uppercase;
+}
+
+
+
+/* Логотип шапка */
+
+.header-logo {
+	display: block;
+	margin: 0 auto;
+	padding-top: 67px;
+}
+
+/* Картинка для фона шапки*/
+
+.header {
+	min-height: 800px;
+	background-image: url(../image/Layer1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Основной контент main */
+.main-files {
+
+}
+
+.main-files_list {
+	display: flex; 
+	justify-content: space-around;
+	list-style: none;
+	margin-top: 170px;
+}
+
+.main-files_item {
+	display: flex;
+}
+
+.main-files_title {
+	margin-left: 35px;
+}
+
+.main-files_description {
+	width: 275px;
+	margin: 0;
+	margin-left: 30px;
+}
+
+/* Иконки документа и фото*/
+
+.main-files_img__doc {
+	width: 95px;
+	height: 121px;
+	background-image: url(../image/icondoc.png);
+	background-repeat: no-repeat;
+}
+
+.main-files_img__photo {
+	width: 102px;
+	height: 127px;
+	background-image: url(../image/iconcamera.png);
+	background-repeat: no-repeat;
+}
+
+/* Описательная часть */
+
+.main-description_tablet::before {
+	content: "";
+	position: relative;
+	display: block;
+	width: 156px;
+	height: 156px;
+	background-image: url(../image/1.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-description_computer::before {
+	content: "";
+	position: relative;
+	display: block;
+	width: 156px;
+	height: 156px;
+	background-image: url(../image/2.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer {
+	background-image: url(../image/map.png);
+}
+
+/* Поле пользователя */
+
+.user {
+	position: absolute;
+	width: 334px;
+	height: 330px;
+	top: 580px;
+	left: 50%;
+	margin-left: -170px;
+
+	background-color: #ffffff;
+	box-shadow: 0px 2px 3px rgba(196, 196, 196, 1);
+}
+
+.user-form-header{
+	display: flex;
+    flex-direction: column;
+}
+
+.user-form_header__input {
+    width: 250px;
+    height: 30px;
+    padding-left: 13px;
+	margin-left: 33px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.user-form_header__button {
+	width: 192px;
+	height: 45px;
+	border: none;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	background-color: #227dd3;
+	border-radius: 3px;
+	margin-left: 65px;
+    margin-top: 27px;
+}
+
+.user-form_header__paragraph {
+	width: 225px;
+    text-align: center;
+    padding-left: 42px
+}
+
+.user-form_header__image {
+    margin-bottom: 25px;
+}
