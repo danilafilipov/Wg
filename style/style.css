@@ -41,15 +41,18 @@ body {
 	line-height: 23px;
 }
 
-.main-description_paragraph,
-.main-description_plan {
+.main-description_tablet-paragraph,
+.main-description_computer-paragraph,
+.main-description_tablet-plan {
 	font-family: Open sans, regular;
 	font-size: 14px;
 	line-height: 23px;
 	color: #ffffff;
+	text-align: left;
 }
 
-.main-description_title {
+.main-description_computer-title,
+.main-description_tablet-title {
 	font-family: Open sans, semibold;
 	font-size: 39.35px;
 	line-height: 62px;
@@ -114,6 +117,7 @@ body {
 	list-style: none;
 	margin-top: 170px;
 	margin-bottom: 96px;
+	background-color: #ffffff;
 }
 
 .main-files_item {
@@ -146,47 +150,21 @@ body {
 	background-repeat: no-repeat;
 }
 
+
+
+
 /* Описательная часть */
+/* 1 блок */
 
-.main-description_tablet-block {
-	width: 650px;
-	margin: 0 auto;
+.maind-description {
+
 }
-
-.main-description_computer-block {
-	width: 520px;
-}
-
-
 
 .main-description_tablet {
+	position: relative;
 	text-align: center;
 	padding-top: 85px;
     background-color: #5fc18b;
-}
-
-.main-description_title {
-	margin-top: 17px;
-	margin-bottom: 23px;
-}
-
-.main-description_tablet-plan {
-	text-align: left;
-    margin-bottom: 45px;
-}
-
-.main-description_paragraph {
-    text-align: left;
-    width: 530px;
-    margin-bottom: 0;
-    margin-top: 65px;
-    margin-left: 65px;
-}
-
-.main-description_computer {
-	display: flex;
-    margin: 0 auto;
-    background-color: #44a36f;
 }
 
 .main-description_tablet::before {
@@ -201,6 +179,45 @@ body {
 	background-size: cover;
 }
 
+.main-description_title {
+	margin-top: 17px;
+	margin-bottom: 23px;
+}
+
+.main-description_tablet-block {
+	width: 650px;
+	margin: 0 auto;
+}
+
+.main-description_tablet-plan {
+    margin-bottom: 45px;
+}
+
+.main-description_tablet-paragraph {
+	margin: 0;
+}
+
+/* 1.5 SVG блок */
+.border {
+	position: absolute;
+	top: 1735px;
+
+}
+
+.border svg {
+	width: 100%;
+
+}
+
+/* 2 блок */
+
+.main-description_computer {
+	display: flex;
+    margin: 0 auto;
+    margin-top: 220px;
+    background-color: #44a36f;
+}
+
 .main-description_computer::before {
 	content: "";
 	position: relative;
@@ -213,6 +230,24 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.main-description_computer-block {
+	width: 520px;
+	margin-left: 60px;
+}
+
+.main-description_computer-title {
+
+}
+
+.main-description_computer-paragraph {
+
+}
+
+
+
+
+/* футтер */
 
 .footer {
 	background-image: url(../image/map.png);
