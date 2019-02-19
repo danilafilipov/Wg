@@ -50,9 +50,7 @@ body {
 	color: #ffffff;
 	text-align: left;
 }
-
-.main-description_computer-title,
-.main-description_tablet-title {
+.main-description_computer-title {
 	font-family: Open sans, semibold;
 	font-size: 39.35px;
 	line-height: 62px;
@@ -60,12 +58,23 @@ body {
 	font-weight: 600;
 }
 
+.main-description_tablet-title {
+	font-family: Open sans, semibold;
+	font-size: 39.35px;
+	line-height: 62px;
+	color: #ffffff;
+	font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 23px;
+}
+
 .main-button {
 	text-decoration: none;
 }
 
 .footer-copyright,
-.footer-user_form__input,
+.footer-user_form__input-name,
+.footer-user_form__input-email,
 .footer-user_form__textarea {
 	font-family: Open sans, regular;
 	font-size: 14px;
@@ -157,7 +166,7 @@ body {
 /* Описательная часть */
 /* 1 блок */
 
-.maind-description {
+.main-description {
 
 }
 
@@ -165,6 +174,7 @@ body {
 	position: relative;
 	text-align: center;
 	padding-top: 85px;
+	padding-bottom: 38px;
     background-color: #5fc18b;
 }
 
@@ -219,7 +229,7 @@ body {
 	position: relative;
     margin: 0 auto;
     background-color: #44a36f;
-	padding-bottom: 152px;
+	padding-bottom: 133px;
 }
 
 .main-description_computer::before {
@@ -265,23 +275,99 @@ body {
     width: 505px;
     margin-top: 10px;
     margin-left: 20px;
-    margin-bottom: 37px;
+	margin-bottom: 34px;
 }
 
 
 .main-button {
-	border: 2px solid #ffffff;
-	border-radius: 3px;
-	width: 200px;
-	height: 56px;
-	color: #ffffff;
+	border: 3px solid #ffffff;
+    border-radius: 8px;
+    letter-spacing: 0.6px;
+    width: 200px;
+    height: 56px;
+    color: #ffffff;
+    padding: 4px 31px 10px 31px;
+    margin-left: 23px;
 }
 
 
 /* футтер */
 
 .footer {
+	position: relative;
+
+    height: 635px;
+    background-repeat: no-repeat;
+}
+
+.footer-user_form {
+	display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.85;
+    top: 161px;
+    left: 425px;
+}
+
+.footer-map {
 	background-image: url(../image/map.png);
+	height: 635px;
+}
+
+.footer-user_form__input-name,
+.footer-user_form__input-email,
+.footer-user_form__textarea {
+	width: 260px;
+	margin-left: 80px;
+	padding-left: 15px;
+}
+ 
+.footer-user_form__input-name {
+	height: 27px;
+	margin-top: 110px;
+}
+
+.footer-user_form__input-email {
+	height: 27px;
+	margin-top: 15px;
+	margin-bottom:15px;
+}
+
+.footer-user_form__textarea {
+	height: 75px;
+}
+
+.footer-user_form__button {
+	display: block;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    background-image: url(../image/Shape5.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 67px;
+    height: 67px;
+    margin-left: 187px;
+    margin-top: 31px;
+}
+
+.footer-copyright {
+    display: block;
+    color: #ffffff;
+    padding-top: 14px;
+    letter-spacing: 0.2px;
+    margin-left: 465px;
+}
+
+.footer-container_copyright {
+	height: 45px;
+	background-color: #43a06d;
 }
 
 /* Поле пользователя */
