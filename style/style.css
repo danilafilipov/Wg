@@ -57,6 +57,7 @@ body {
 	font-size: 39.35px;
 	line-height: 62px;
 	color: #ffffff;
+	font-weight: 600;
 }
 
 .main-button {
@@ -187,6 +188,7 @@ body {
 .main-description_tablet-block {
 	width: 650px;
 	margin: 0 auto;
+	padding-bottom: 240px;
 }
 
 .main-description_tablet-plan {
@@ -197,54 +199,83 @@ body {
 	margin: 0;
 }
 
-/* 1.5 SVG блок */
-.border {
-	position: absolute;
-	top: 1735px;
-
-}
-
-.border svg {
-	width: 100%;
-
+.main-description_tablet::after {
+	content: '';
+    position: absolute;
+    left: 0px;
+    top: 699px;
+    border: 10px solid #308355;
+    border-top: 18px solid transparent;
+    border-right: 1280px solid #308355;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    transform: skewX(0deg) skewY(-13.6deg);
 }
 
 /* 2 блок */
 
 .main-description_computer {
 	display: flex;
+	position: relative;
     margin: 0 auto;
-    margin-top: 220px;
     background-color: #44a36f;
+	padding-bottom: 152px;
 }
 
 .main-description_computer::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -319px;
+    border: 0px solid transparent;
+    border-top: 324px solid transparent;
+    border-right: 1280px solid #44a36f;
+    border-bottom: 4px solid #44a36f;
+    border-left: 0px solid transparent;
+    transform: skewY(0.64deg);
+}
+
+.main-description_computer-block::before {
 	content: "";
-	position: relative;
-	display: block;
-	width: 275px;
-	height: 228px;
-    margin-left: 228px;
-    margin-top: 44px;
-	background-image: url(../image/2.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+    position: absolute;
+    left: -319px;
+    top: 46px;
+    display: block;
+    width: 274px;
+    height: 227px;
+    margin: 0 auto;
+    background-image: url(../image/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-description_computer-block {
-	width: 520px;
-	margin-left: 60px;
+	position: relative;
+    width: 500px;
+    margin-left: 550px;
 }
 
 .main-description_computer-title {
-
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-bottom: 0px;
 }
 
 .main-description_computer-paragraph {
-
+    width: 505px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 37px;
 }
 
 
+.main-button {
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+	width: 200px;
+	height: 56px;
+	color: #ffffff;
+}
 
 
 /* футтер */
